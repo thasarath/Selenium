@@ -13,15 +13,15 @@ class py_unittest(unittest.TestCase):
         global driver
         global browser
         # Code for headless Browser invoking
-        opts = Options()
-        opts.set_headless()
-        assert opts.headless
-        driver = webdriver.Firefox(options=opts,
-                                   executable_path=r'C:\\Users\HP User\PycharmProjects\FirstTest\drivers\geckodriver.exe')
-        print("Firefox Headless Browser Invoked")
-        # Code for calling Firefox Browser
-        # driver = webdriver.Firefox(
-        # executable_path = r'C:\\Users\HP User\PycharmProjects\FirstTest\drivers\geckodriver.exe')
+        # opts = Options()
+        # opts.set_headless()
+        # assert opts.headless
+        # driver = webdriver.Firefox(options=opts,
+                                   # executable_path=r'C:\\Users\HP User\PycharmProjects\FirstTest\drivers\geckodriver.exe')
+        # print("Firefox Headless Browser Invoked")
+        Code for calling Firefox Browser
+        driver = webdriver.Firefox(
+        executable_path = r'C:\\Users\HP User\PycharmProjects\FirstTest\drivers\geckodriver.exe')
 
     def test_search(self):
         driver.get("https://www.python.org/")
